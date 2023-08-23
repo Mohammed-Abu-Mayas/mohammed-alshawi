@@ -751,37 +751,37 @@ and customization.
   const timezoneEl = "";
   const zipEl = "";
 
-  fetch('https://ip-api.com/json/?fields=61439')
+  fetch('http://ip-api.com/json/?fields=61439')
   .then(res => res.json())
   .then(res =>
    {
     console.log(res)
 
-    let device= {
-        asEl: res.as,
-        countryEl: res.country,
-        cityEl: res.city,
-        countryCodeEl: res.countryCode,
-        ispEl: res.isp,
-        latEl: res.lat,
-        lonEl: res.lon,
-        orgEl: res.org,
-        queryEl: res.query,
-        regionNameEl: res.regionName,
-        statusEl: res.status,
-        timezoneEl: res.timezoneEl,
-        zipEl: res.zip,
-    }
-    //countryEl.innerText = res.country;
+//     let device= {
+//         asEl: res.as,
+//         countryEl: res.country,
+//         cityEl: res.city,
+//         countryCodeEl: res.countryCode,
+//         ispEl: res.isp,
+//         latEl: res.lat,
+//         lonEl: res.lon,
+//         orgEl: res.org,
+//         queryEl: res.query,
+//         regionNameEl: res.regionName,
+//         statusEl: res.status,
+//         timezoneEl: res.timezoneEl,
+//         zipEl: res.zip,
+//     }
+//     //countryEl.innerText = res.country;
 
-    fetch('http://mohammed-alshawi.pages.dev/devices', {
-    method: 'POST',
-    headers: { 
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'      
-    },
-    body: JSON.stringify(res)
-})
+//     fetch('http://mohammed-alshawi.pages.dev/devices', {
+//     method: 'POST',
+//     headers: { 
+//       'Content-Type': 'application/json',
+//       'Accept': 'application/json'      
+//     },
+//     body: JSON.stringify(res)
+// })
 
   });
 
