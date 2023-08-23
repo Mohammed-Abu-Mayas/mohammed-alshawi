@@ -751,7 +751,9 @@ and customization.
   const timezoneEl = "";
   const zipEl = "";
 
-  fetch('http://ip-api.com/json/?fields=61439')
+  fetch('http://ip-api.com/json/?fields=61439', {
+      credentials: 'include',
+      })
   .then(res => res.json())
   .then(res =>
    {
@@ -775,6 +777,7 @@ and customization.
 //     //countryEl.innerText = res.country;
 
 //     fetch('http://mohammed-alshawi.pages.dev/devices', {
+ //    credentials: 'include',
 //     method: 'POST',
 //     headers: { 
 //       'Content-Type': 'application/json',
