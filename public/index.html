@@ -751,15 +751,16 @@ and customization.
   // const timezoneEl = "";
   // const zipEl = "";
 
-  // fetch('http://ip-api.com/json/?fields=61439', {
-  //     credentials: 'include',
-  //     method: 'Get',
-  //   headers: {'Content-Type': 'application/json', }
-  //     })
-  // .then(res => res.json())
-  // .then(res =>
-  //  {
-  //   console.log(res)
+  fetch('http://ip-api.com/json/?fields=61439', {
+     // credentials: 'include',
+      method: 'Get',
+    headers: {'Content-Type': 'application/json', }
+      })
+  .then(res => res.json())
+  .then(res =>
+   {
+    console.log(res)
+      });
 
 //     let device= {
 //         asEl: res.as,
@@ -788,7 +789,7 @@ and customization.
 //     body: JSON.stringify(res)
 // })
 
-  // });
+  
 
 
 
