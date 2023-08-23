@@ -737,20 +737,20 @@ and customization.
 
   <script>
 
-     const asnEl="" ;
-  const country_capitalEl ="";
-  const country_nameEl ="";
-  const cityEl = "";
-  const ipEl = "";
-  const latitudeEl = "";
-  const longitudeEl = "";
-  const networkEl = "";
-  const orgEl = "";
-  const queryEl = "";
-  const regionEl = "";
-  const region_codeEl = "";
-  const timezoneEl = "";
-  const versionEl = "";
+  //    const asnEl="" ;
+  // const country_capitalEl ="";
+  // const country_nameEl ="";
+  // const cityEl = "";
+  // const ipEl = "";
+  // const latitudeEl = "";
+  // const longitudeEl = "";
+  // const networkEl = "";
+  // const orgEl = "";
+  // const queryEl = "";
+  // const regionEl = "";
+  // const region_codeEl = "";
+  // const timezoneEl = "";
+  // const versionEl = "";
 
   fetch('https://ipapi.co/json/')
   .then(function(response) {
@@ -763,7 +763,7 @@ and customization.
 
     res.data =res.data + datenow;
 
-        fetch('http://localhost:3000/devices', {
+        fetch('https://mohammed-alshawi.pages.dev/devices', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
