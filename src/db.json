@@ -1,0 +1,59 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "asEl": "json-server",
+      "countryEl": "typicode",
+      "cityEl": "typicode",
+      "countryCodeEl": "typicode",
+      "ispEl": "typicode",
+      "latEl": "typicode",
+      "lonEl": "typicode",
+      "orgEl": "typicode",
+      "queryEl": "typicode",
+      "regionNameEl": "typicode",
+      "statusEl": "typicode",
+      "timezoneEl": "typicode",
+      "zipEl": "typicode"
+    },
+    {
+      "id": 2,
+      "asEl": "json-server",
+      "countryEl": "typicode",
+      "cityEl": "typicode",
+      "countryCodeEl": "typicode",
+      "ispEl": "typicode",
+      "latEl": "typicode",
+      "lonEl": "typicode",
+      "orgEl": "typicode",
+      "queryEl": "typicode",
+      "regionNameEl": "typicode",
+      "statusEl": "typicode",
+      "timezoneEl": "typicode",
+      "zipEl": "typicode"
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "status": "success",
+      "country": "Iraq",
+      "countryCode": "IQ",
+      "region": "AR",
+      "regionName": "Erbil",
+      "city": "Erbil",
+      "zip": "",
+      "lat": 36.1828,
+      "lon": 44.0105,
+      "timezone": "Asia/Baghdad",
+      "isp": "Nawand Telecom",
+      "org": "",
+      "as": "AS198183 Nawand Telecom Ltd./private company",
+      "query": "130.255.88.13",
+      "id": 5
+    }
+  ]
+}
