@@ -736,31 +736,25 @@ and customization.
   <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
 
   <script>
+fetch('https://ipapi.co/json/')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
 
-  // const asEl="" ;
-  // const countryEl ="";
-  // const cityEl = "";
-  // const countryCodeEl = "";
-  // const ispEl = "";
-  // const latEl = "";
-  // const lonEl = "";
-  // const orgEl = "";
-  // const queryEl = "";
-  // const regionNameEl = "";
-  // const statusEl = "";
-  // const timezoneEl = "";
-  // const zipEl = "";
-
-  fetch('http://ip-api.com/json/?fields=61439', {
-     // credentials: 'include',
-      method: 'Get',
-    headers: {'Content-Type': 'application/json', }
-      })
-  .then(res => res.json())
-  .then(res =>
-   {
-    console.log(res)
-      });
+    
+  // fetch('http://ip-api.com/json/?fields=61439', {
+  //    // credentials: 'include',
+  //     method: 'Get',
+  //   headers: {'Content-Type': 'application/json', }
+  //     })
+  // .then(res => res.json())
+  // .then(res =>
+  //  {
+  //   console.log(res)
+  //     });
 
 //     let device= {
 //         asEl: res.as,
