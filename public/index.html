@@ -736,52 +736,43 @@ and customization.
   <!-- <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script> -->
 
   <script>
-fetch('https://ipapi.co/json/')
+
+     const asnEl="" ;
+  const country_capitalEl ="";
+  const country_nameEl ="";
+  const cityEl = "";
+  const ipEl = "";
+  const latitudeEl = "";
+  const longitudeEl = "";
+  const networkEl = "";
+  const orgEl = "";
+  const queryEl = "";
+  const regionEl = "";
+  const region_codeEl = "";
+  const timezoneEl = "";
+  const versionEl = "";
+
+  fetch('https://ipapi.co/json/')
   .then(function(response) {
     return response.json();
   })
-  .then(function(data) {
-    console.log(data);
+  .then(function(res) {
+    console.log(res);
+
+    let datenow = new Date().toJSON() ;
+
+    res.data =res.data + datenow;
+
+        fetch('http://localhost:3000/devices', {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'      
+        },
+        body: JSON.stringify(res)
+    })
+
   });
-
-    
-  // fetch('http://ip-api.com/json/?fields=61439', {
-  //    // credentials: 'include',
-  //     method: 'Get',
-  //   headers: {'Content-Type': 'application/json', }
-  //     })
-  // .then(res => res.json())
-  // .then(res =>
-  //  {
-  //   console.log(res)
-  //     });
-
-//     let device= {
-//         asEl: res.as,
-//         countryEl: res.country,
-//         cityEl: res.city,
-//         countryCodeEl: res.countryCode,
-//         ispEl: res.isp,
-//         latEl: res.lat,
-//         lonEl: res.lon,
-//         orgEl: res.org,
-//         queryEl: res.query,
-//         regionNameEl: res.regionName,
-//         statusEl: res.status,
-//         timezoneEl: res.timezoneEl,
-//         zipEl: res.zip,
-//     }
-//     //countryEl.innerText = res.country;
-
-//     fetch('http://mohammed-alshawi.pages.dev/devices', {
- //    credentials: 'include',
-//     method: 'POST',
-//     headers: { 
-//       'Content-Type': 'application/json',
-//       'Accept': 'application/json'      
-//     },
-//     body: JSON.stringify(res)
-// })
 
   
 
